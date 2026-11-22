@@ -1,17 +1,22 @@
 {
   "name": "test2",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
-  "engines": {
-    "node": "24.18.0"
+  "description": "- Node.js 20+ - MongoDB - Redis (the current backend uses Redis for OTP and token revocation)",
+  "keywords": [],
+  "homepage": "https://github.com/famatef/saraha-web#readme",
+  "bugs": {
+    "url": "https://github.com/famatef/saraha-web/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/famatef/saraha-web.git"
+  },
+  "type": "module",
+  "main": "src/index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node src/index.js",
     "dev": "cross-env NODE_ENV=development node --watch src/index.js"
   },
-  "keywords": [],
-  "type": "module",
   "dependencies": {
     "bcrypt": "^6.0.0",
     "concurrently": "^10.0.6",
@@ -28,10 +33,12 @@
     "mongodb": "^7.6.0",
     "mongoose": "^9.10.1",
     "multer": "^2.4.0",
-  
     "mysql2": "^3.24.2",
     "nodemailer": "^10.1.2",
     "redis": "^6.3.0",
     "sequelize": "^6.37.8"
+  },
+  "engines": {
+    "node": "24.18.0"
   }
 }
