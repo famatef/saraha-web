@@ -1,0 +1,9 @@
+node_modules
+uploads
+config/*
+!config/config.service.js
+
+
+!config/.env.development.example
+!config/.env.production.example
+!frontend/.env.example
